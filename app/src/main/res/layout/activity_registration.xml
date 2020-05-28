@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".RegistrationActivity">
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textdesign"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:ems="10"
+        android:hint="Enter your name..."
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <EditText
+        android:id="@+id/etUserEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textdesign"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:ems="10"
+        android:hint="Enter your email..."
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserName"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <EditText
+        android:id="@+id/etUserPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textdesign"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:ems="10"
+        android:hint="Enter your password..."
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserEmail"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="162dp"
+        android:layout_height="54dp"
+        android:background="@drawable/btndesign"
+        android:text="Signup"
+        android:textAllCaps="false"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserPassword"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <TextView
+        android:id="@+id/tvUserLogin"
+        android:layout_width="76dp"
+        android:layout_height="29dp"
+        android:text=" Login.."
+        android:textAllCaps="false"
+        android:textColor="#F10808"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textdesign"
+        android:drawableStart="@drawable/ic_pan_tool_black_24dp"
+        android:ems="10"
+        android:hint="Enter your age..."
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/etUserEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserName"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already a user?"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvUserLogin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:fontFamily="@font/abeezee"
+        android:text="WELCOME"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/etUserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/carme"
+        android:text="New user..."
+        android:textColor="#F10808"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/etUserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

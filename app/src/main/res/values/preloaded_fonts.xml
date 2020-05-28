@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abeezee</item>
+        <item>@font/carme</item>
+        <item>@font/federo</item>
+        <item>@font/roboto_mono_thin</item>
+    </array>
+</resources>
