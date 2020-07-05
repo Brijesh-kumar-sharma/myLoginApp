@@ -7,62 +7,84 @@
     android:background="#FFFFFF"
     tools:context=".RegistrationActivity">
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etUserName"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:background="@drawable/textdesign"
-        android:drawableStart="@drawable/ic_person_black_24dp"
-        android:ems="10"
-        android:hint="Enter your name..."
-        android:inputType="textPersonName"
-        android:paddingLeft="15dp"
-        android:textAllCaps="false"
-        android:textSize="18sp"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:errorEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.352" />
+        app:layout_constraintVertical_bias="0.291">
 
-    <EditText
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@drawable/textdesign"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:ems="10"
+            android:hint="Enter your Username"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etUserEmail"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:background="@drawable/textdesign"
-        android:drawableStart="@drawable/ic_email_black_24dp"
-        android:ems="10"
-        android:hint="Enter your email..."
-        android:inputType="textEmailAddress"
-        android:paddingLeft="15dp"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUserName"
-        app:layout_constraintVertical_bias="0.26" />
+        android:layout_width="330dp"
+        android:layout_height="80dp"
 
-    <EditText
-        android:id="@+id/etUserPassword"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:background="@drawable/textdesign"
-        android:drawableStart="@drawable/ic_lock_black_24dp"
-        android:ems="10"
-        android:hint="Enter your password..."
-        android:inputType="textPassword"
-        android:paddingLeft="15dp"
-        android:textAllCaps="false"
-        android:textSize="18sp"
+
+        app:errorEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUserEmail"
-        app:layout_constraintVertical_bias="0.111" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.608">
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@drawable/textdesign"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:ems="10"
+            android:hint="Enter your Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etUserPassword"
+        android:layout_width="330dp"
+        android:layout_height="75dp"
+
+
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@drawable/textdesign"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:ems="10"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnRegister"
@@ -71,15 +93,14 @@
         android:background="@drawable/btndesign"
         android:text="Signup"
         android:textAllCaps="false"
-
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etUserPassword"
-        app:layout_constraintVertical_bias="0.391" />
+        app:layout_constraintVertical_bias="0.087" />
 
     <TextView
         android:id="@+id/tvUserLogin"
@@ -96,24 +117,30 @@
         app:layout_constraintTop_toBottomOf="@+id/btnRegister"
         app:layout_constraintVertical_bias="0.632" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etAge"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:background="@drawable/textdesign"
-        android:drawableStart="@drawable/ic_pan_tool_black_24dp"
-        android:ems="10"
-        android:hint="Enter your age..."
-        android:inputType="number"
-        android:paddingLeft="15dp"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/etUserEmail"
+        android:layout_width="329dp"
+        android:layout_height="84dp"
+        app:errorEnabled="true"
+        app:counterMaxLength="12"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUserName"
-        app:layout_constraintVertical_bias="0.538" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449">
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@drawable/textdesign"
+            android:drawableStart="@drawable/ic_pan_tool_black_24dp"
+            android:ems="10"
+            android:hint="Enter your Adhar card number"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView10"

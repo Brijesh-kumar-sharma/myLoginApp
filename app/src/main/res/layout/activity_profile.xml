@@ -26,7 +26,7 @@
         android:id="@+id/tvProfileAge"
         android:layout_width="320dp"
         android:layout_height="60dp"
-        android:text="Age:-"
+        android:text="Aadhar number"
         android:textAllCaps="false"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
